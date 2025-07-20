@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     {% include 'admin_navigation.html' %}
 </head>
@@ -103,28 +104,28 @@
                             {% csrf_token %}
                             <th> : 
                                 {% if data.status == "Pending" %}
-                                    <select name="status" class="status-change">
+                                    <select name="status" class="status-change" title="Change booking status">
                                         <option value="Pending" selected>Pending</option>
                                         <option value="Confirm">Confirm</option>
                                         <option value="Canceled">Cancel</option>
                                     </select>
                                 {% endif %}
                                 {% if data.status == "Confirm" %}
-                                    <select name="status" class="status-change">
+                                    <select name="status" class="status-change" title="Change booking status">
                                         <option value="Pending">Pending</option>
                                         <option value="Confirm" selected>Confirm</option>
                                         <option value="Canceled">Cancel</option>
                                     </select>
                                 {% endif %}
                                 {% if data.status == "Canceled" %}
-                                    <select name="status" class="status-change">
+                                    <select name="status" class="status-change" title="Change booking status">
                                         <option value="Pending">Pending</option>
                                         <option value="Confirm">Confirm</option>
                                         <option value="Canceled" selected>Cancel</option>
                                     </select>
                                 {% endif %}
                                 {% if data.status == "Paid" %}
-                                    <select name="status" class="status-change">
+                                    <select name="status" class="status-change" title="Booking status">
                                         <option disabled hidden selected>PAID</option>
                                     </select>
                                 {% endif %}
