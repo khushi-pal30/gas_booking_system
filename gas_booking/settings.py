@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k#e43a#en@xoxo(8*kebl(s8t1#y8#$as6y%78)ip=sw%$bg^9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [gas_booking_system2]
 
 
 # Application definition
