@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-k#e43a#en@xoxo(8*kebl(s8t1#y8#$as6y%78)ip=sw%$bg^9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [gas_booking_system2]
+ALLOWED_HOSTS = ["*']
 
 
 # Application definition
